@@ -15,12 +15,12 @@
   <header id="header-inner">
     <div class="container">
       <nav id="main-nav">
-        <h1>&emsp;O E</h1>
+        <h1> O E</h1>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
-          <li><a href="cotnact.html" class="current">Contact</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -32,13 +32,16 @@
       <h2 class="section-title">Contact Me</h2>
       <div class="bottom-line"></div>
       <p class="lead">Here is how you can reach me</p>
-      <form>
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Name">
-          <input type="text" class="text-input subject-input" placeholder="Subject">
-          <input type="email" class="text-input email-input" placeholder="Email Address">
-          <input type="text" class="text-input phone-input" placeholder="Phone Number">
-          <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+          <input type="text" class="text-input name-input" placeholder="Name" name="name">
+          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+          <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+          <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
         </div>
         <button type="submit" class="btn-dark">Submit</button>
       </form>
