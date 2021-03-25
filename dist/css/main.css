@@ -131,3 +131,20 @@ img {
   #home-specialize .specials .fab {
     color: #d6ae3f;
     padding-bottom: 0.4rem; }
+
+#home-stats .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-stats .stats li {
+    line-height: 2; }
+    #home-stats .stats li.stats-title {
+      font-size: 1.5rem; }
+    #home-stats .stats li.stats-number {
+      font-size: 2rem;
+      font-weight: bold; }
+  #home-stats .stats div {
+    padding: 3rem 0; }
+    #home-stats .stats div:nth-child(odd) {
+      background: #f4f4f4; }
+    #home-stats .stats div:nth-child(even) {
+      background: #ccc; }
