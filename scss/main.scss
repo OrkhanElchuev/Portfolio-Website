@@ -96,13 +96,17 @@ img {
     }
   }
 
+  // Header Inner
   &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
-// Home Sections
+// Home
 #home {
-  // Home Section A Specialize
+  // Home Specialize
   &-specialize {
     .specials {
       margin-top: 3rem;
@@ -118,7 +122,7 @@ img {
     }
   }
 
-  // Home Section B Stats
+  // Home Stats
   &-stats {
     .stats {
       display: grid;
@@ -151,7 +155,7 @@ img {
     }
   }
 
-  // Home Section C Process
+  // Home Process
   &-process {
     .process {
       display: grid;
@@ -199,6 +203,110 @@ img {
             color: set-text-color($dark-color);
           }
         }
+      }
+    }
+  }
+}
+
+// About
+#about {
+  // About Info
+  &-info {
+    .about-information {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+
+    .award-2 {
+      grid-area: aw2;
+    }
+
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  // About Progress
+  &-prog {
+    .progress {
+      overflow: hidden;
+      height: 23px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+
+  // About Logos
+  &-logos {
+    .about-logo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  // About Testimonials
+  &-testim {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+
+      ul {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
       }
     }
   }
