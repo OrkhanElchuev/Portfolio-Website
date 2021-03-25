@@ -350,6 +350,22 @@ img {
 
     button[type="submit"] {
       width: 50%;
+      margin-bottom: 13.5rem;
+    }
+  }
+
+  &-info {
+    .contact-information {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-tagline {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
     }
   }
 }
