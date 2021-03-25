@@ -175,6 +175,7 @@ img {
     right: 0;
     font-size: 28px;
     background: #be6fc5;
+    color: #000;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -198,7 +199,8 @@ img {
       height: 90px;
       line-height: 90px; }
       #home-process .process-icon:hover .process-step {
-        background: #333; }
+        background: #333;
+        color: #fff; }
 
 #main-footer {
   background: #333;
