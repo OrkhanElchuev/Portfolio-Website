@@ -268,7 +268,26 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem; }
   #about-logos .about-logo img {
-    width: 65%; }
+    width: 80%; }
+
+#about-testim .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem; }
+  #about-testim .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-testim .testimonials p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-testim .testimonials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
 
 #main-footer {
   background: #333;
