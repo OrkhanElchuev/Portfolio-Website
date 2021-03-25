@@ -28,6 +28,22 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #be6fc5; }
 
+.bg-main {
+  background: #be6fc5;
+  color: #000; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -206,6 +222,34 @@ img {
       #home-process .process-icon:hover .process-step {
         background: #333;
         color: #fff; }
+
+#about-info .about-information {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  gap: 1.2rem; }
+
+#about-info .bio-image {
+  grid-area: bioimage; }
+
+#about-info .bio {
+  grid-area: bio;
+  border-left: 3px solid #be6fc5;
+  padding: 0.8rem; }
+
+#about-info .award-1 {
+  grid-area: aw1; }
+
+#about-info .award-2 {
+  grid-area: aw2; }
+
+#about-info .award-3 {
+  grid-area: aw3; }
+
+#about-info .award-1 .fas,
+#about-info .award-2 .fas,
+#about-info .award-3 .fas {
+  color: #be6fc5;
+  margin: 1rem; }
 
 #main-footer {
   background: #333;
