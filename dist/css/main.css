@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #d6ae3f; }
+  background-color: #c062c9; }
 
 .btn-light {
   color: #333;
@@ -26,7 +26,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #d6ae3f; }
+  background-color: #c062c9; }
 
 .lead {
   font-size: 1.3rem;
@@ -59,10 +59,18 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #d6ae3f;
+  background: #c062c9;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -116,7 +124,7 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #d6ae3f; }
+      border-color: #c062c9; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -136,7 +144,7 @@ img {
   grid-template-columns: repeat(4, 1fr); }
   #home-specialize .specials .fas,
   #home-specialize .specials .fab {
-    color: #d6ae3f;
+    color: #c062c9;
     padding-bottom: 0.4rem; }
 
 #home-stats .stats {
@@ -155,3 +163,39 @@ img {
       background: #f4f4f4; }
     #home-stats .stats div:nth-child(even) {
       background: #ccc; }
+
+#home-process .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center; }
+  #home-process .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    background: #c062c9;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    padding: 1rem;
+    transition: all 1s; }
+  #home-process .process-icon {
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    transition: all 1s; }
+    #home-process .process-icon:hover {
+      background: #c062c9;
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
+      #home-process .process-icon:hover .process-step {
+        background: #333; }
