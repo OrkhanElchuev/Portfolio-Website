@@ -362,6 +362,28 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
+#contact-form .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-form .text-fields .name-input {
+    grid-area: name; }
+  #contact-form .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-form .text-fields .email-input {
+    grid-area: email; }
+  #contact-form .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-form .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-form .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contact-form button[type="submit"] {
+  width: 50%; }
+
 #main-footer {
   background: #333;
   color: #fff;
