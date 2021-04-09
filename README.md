@@ -1,5 +1,5 @@
 # Portfolio-Website
-#### Creating a responsive Portfolio Website using Sass with Home, Projects, About and Contact pages. The website includes smooth transitions, animations and typewriting effect. This website is partially created via [Brad Traversy](https://www.udemy.com/course/modern-html-css-from-the-beginning/)'s Udemy course.
+### Creating a responsive Portfolio Website using Sass with Home, Projects, About and Contact pages. The website includes smooth transitions, animations and typewriting effect. This website is partially created via [Brad Traversy](https://www.udemy.com/course/modern-html-css-from-the-beginning/)'s Udemy course.
 
 ## Screenshots 
 
